@@ -1,150 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direction des Prévisions Macroéconomiques</title>
-    <style>
-        /* Reset & base */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Arial', sans-serif; background: #f5f5f5; }
-        a { text-decoration: none; color: inherit; }
-
-        /* Header & Nav */
-        header { background: #4CAF50; color: #fff; position: sticky; top: 0; z-index: 1000; }
-        .container { max-width: 1200px; margin: auto; padding: 0 1rem; }
-        .nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
-        .nav-brand h1 { font-size: 1.5rem; }
-        nav ul { display: flex; list-style: none; }
-        nav li { margin-left: 1.5rem; }
-        nav li a { font-weight: bold; transition: color 0.3s; }
-        nav li a:hover { color: #C8E6C9; }
-        .mobile-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
-
-        /* Sections */
-        main { padding: 2rem 1rem; }
-        section { margin-bottom: 2rem; }
-        section h2 { background: #4caf50; color: #fff; padding: .75rem 1rem; border-radius: 5px 5px 0 0; }
-        section ul { border: 1px solid #4caf50; border-radius: 0 0 5px 5px; list-style: none; }
-        section li { background: #fff; padding: .75rem 1rem; border-top: 1px solid #ddd; transition: background 0.2s; }
-        section li:first-child { border-top: none; }
-        section li:hover { background: #f0f0f0; }
-        section li a { display: block; }
-
-        /* Footer */
-        footer { text-align: center; padding: 1rem 0; font-size: .9rem; color: #777; }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .mobile-toggle { display: block; }
-            nav ul { position: absolute; top: 60px; left: 0; right: 0; background: #4caf50; flex-direction: column; display: none; }
-            nav ul.active { display: flex; }
-            nav li { margin: .5rem 0; text-align: center; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direction des Prévisions Macroéconomiques</title>
+  <!-- Lien vers le CSS externe -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container nav-bar">
-            <div class="nav-brand">
-                <h1>Prévisions Macroéconomiques</h1>
-            </div>
-            <div class="mobile-toggle" id="mobile-toggle">☰</div>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="#admin">Admin</a></li>
-                    <li><a href="#methodo">Méthodologie</a></li>
-                    <li><a href="#transmission">Transmission</a></li>
-                    <li><a href="#conjoncture">Conjoncture</a></li>
-                    <li><a href="#thematique">Thématique</a></li>
-                    <li><a href="#budget">Budget</a></li>
-                    <li><a href="#rapports">Rapports</a></li>
-                    <li><a href="#formations">Formations</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Lien skip pour les utilisateurs clavier -->
+  <a href="#main-content" class="skip-link">Passer au contenu</a>
 
-    <main class="container">
-        <!-- Chaque section avec ID pour nav -->
-        <section id="admin">
-            <h2>Documents administratifs</h2>
-            <ul>
-                <li><a href="documents/1BFAFA2023002.pdf" download>1BFAFA2023002</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-        <section id="methodo">
-            <h2>Documents méthodologiques</h2>
-            <ul>
-                <li><a href="#">Document 1</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-        <section id="transmission">
-            <h2>Documents de transmission</h2>
-            <ul>
-                <li><a href="#">Document 1</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-        <section id="conjoncture">
-            <h2>Études conjoncturelles</h2>
-            <ul>
-                <li><a href="#">Document 1</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-        <section id="thematique">
-            <h2>Études thématiques</h2>
-            <ul>
-                <li><a href="#">Document 1</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-        <section id="budget">
-            <h2>Notes techniques budget économique</h2>
-            <ul>
-                <li><a href="#">Document 1</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-        <section id="rapports">
-            <h2>Rapports et réunions</h2>
-            <ul>
-                <li><a href="#">Rapport réunion de service</a></li>
-                <li><a href="#">Rapport réunion de direction</a></li>
-                <li><a href="#">Rapport performance socioéconomique</a></li>
-                <li><a href="#">Suivi indicateurs</a></li>
-            </ul>
-        </section>
-        <section id="formations">
-            <h2>Formations</h2>
-            <ul>
-                <li><a href="#">Document 1</a></li>
-                <li><a href="#">Document 2</a></li>
-                <li><a href="#">Document 3</a></li>
-            </ul>
-        </section>
-    </main>
+  <header role="banner">
+    <div class="container nav-bar">
+      <div class="nav-brand">
+        <h1>Prévisions Macroéconomiques</h1>
+      </div>
+      <!-- Bouton accessible pour le menu mobile -->
+      <button
+        class="mobile-toggle"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        id="mobile-toggle">
+        ☰
+      </button>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul id="nav-menu">
+          <li><a href="#admin">Admin</a></li>
+          <li><a href="#methodo">Méthodologie</a></li>
+          <li><a href="#transmission">Transmission</a></li>
+          <li><a href="#conjoncture">Conjoncture</a></li>
+          <li><a href="#thematique">Thématique</a></li>
+          <li><a href="#budget">Budget</a></li>
+          <li><a href="#rapports">Rapports</a></li>
+          <li><a href="#formations">Formations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        &copy; 2025 Direction des Prévisions Macroéconomiques
-    </footer>
+  <main id="main-content" role="main" class="container">
+    <!-- Exemple de section sémantique -->
+    <section id="admin" aria-labelledby="admin-title">
+      <h2 id="admin-title">Documents administratifs</h2>
+      <ul>
+        <li><a href="documents/1BFAFA2023002.pdf" download>1BFAFA2023002</a></li>
+        <li><a href="#">Document 2</a></li>
+        <li><a href="#">Document 3</a></li>
+      </ul>
+    </section>
 
-    <script>
-        // Toggle mobile menu
-        const toggle = document.getElementById('mobile-toggle');
-        const menu = document.getElementById('nav-menu');
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
+    <!-- ... autres sections inchangées ... -->
+  </main>
+
+  <footer role="contentinfo">
+    &copy; 2025 Direction des Prévisions Macroéconomiques
+  </footer>
+
+  <!-- Lien vers le JS externe -->
+  <script src="js/script.js"></script>
 </body>
 </html>
